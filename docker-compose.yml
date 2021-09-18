@@ -5,7 +5,6 @@ services:
     image: postgres
     environment:
       POSTGRES_PASSWORD: 1234
-      POSTGRES_USER: dev
       POSTGRES_DB: app
     volumes:
       - db-volume:/var/lib/postgresql/data
