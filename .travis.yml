@@ -22,7 +22,7 @@ jobs:
       name: "Testing Application"
       services: postgresql
       before_script:
-        - psql -c 'CREATE DATABASE app_test;' -U postgres
+        - psql -c 'CREATE DATABASE app_test;' -U dev
       script:
         - make test
 
